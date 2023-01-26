@@ -1,1 +1,10 @@
-<p>cliente works!</p>
+<table>
+    <tr><h2>Clientes</h2><button routerLink="/cliente/nuevo">nuevo</button></tr>
+    <tr *ngFor="let cliente of clientes">
+        <td>{{cliente.id}}</td>
+        <td>{{cliente.nombre}}</td>
+        <td><button routerLink="/cliente/modificar/{{cliente.id}}">modificar</button>
+            <button routerLink="/cliente/borrar/{{cliente.id}}">borrar</button>
+        </td>
+    </tr>
+</table>

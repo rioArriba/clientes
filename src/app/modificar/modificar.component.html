@@ -1,1 +1,15 @@
-<p>modificar works!</p>
+<p>Modificar Cliente</p>
+<table>
+  <tr>
+    <td>id:</td>
+    <td><input name="id" type="text" readonly placeholder='{{cliente.id}}'></td>
+  </tr>
+  <tr>
+    <td>nombre:</td>
+    <td><input type="text" #nombre /></td>
+  </tr>
+</table>
+<button routerLink="/clientes" (click)="modificar(nombre.value)">
+  Modificar
+</button>
+<button routerLink="/clientes">Cancelar</button>

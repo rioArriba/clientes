@@ -1,1 +1,8 @@
-<p>nuevo works!</p>
+<p>nuevo </p>
+<table>
+    <p>{{idNuevo}}</p>
+    <tr><td>id:</td><td><input name="id" type="text" [(ngModel)]="idNuevo"></td></tr>
+    <tr><td>nombre:</td><td><input type="text" #nombre></td></tr>
+</table>
+<button routerLink="/clientes" (click)="crear(idNuevo, nombre.value)">Crear</button>
+<button routerLink="/clientes">Cancelar</button>

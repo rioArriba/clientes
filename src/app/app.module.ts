@@ -9,7 +9,7 @@ import { ClienteComponent } from './clientes/cliente.component';
 import { NuevoComponent } from './nuevo/nuevo.component';
 import { ModificarComponent } from './modificar/modificar.component';
 import { BorrarComponent } from './borrar/borrar.component';
-import { FichaComponent } from './ficha/ficha.component';
+import { FormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [
@@ -19,12 +19,12 @@ import { FichaComponent } from './ficha/ficha.component';
     ClienteComponent,
     NuevoComponent,
     ModificarComponent,
-    BorrarComponent,
-    FichaComponent
+    BorrarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

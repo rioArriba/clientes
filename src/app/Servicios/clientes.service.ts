@@ -30,10 +30,10 @@ export class ClientesService {
     return this.clientes;
   }
   getCliente(id:number) {
-    return this.clientes.find(item => item.id === id)
+    return this.clientes.find(item => item.id == id)
   }
   borrarCliente(id:number) {
-    return this.clientes.splice(this.clientes.findIndex(item => item.id === id), 1);
+    return this.clientes.splice(this.clientes.findIndex(item => item.id == id), 1);
   }
   modificarCliente(cliente:Cliente) {
     
